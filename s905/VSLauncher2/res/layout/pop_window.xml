@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:orientation="vertical" 
+        android:background="@drawable/download_back" 
+        android:layout_width="478.0dip" 
+        android:layout_height="443.0dip" 
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_marginTop="50dp"
+            android:text="@+id/TextView01"
+            android:textColor="@color/lock_no_select"
+            android:textSize="22sp" />
+
+        <RelativeLayout android:gravity="center" android:id="@+id/menu_app" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="15.0dip"
+            android:layout_marginBottom="15dp">
+            <ImageView android:id="@+id/ImageView01" 
+                android:layout_width="60.0dip" 
+                android:layout_height="60.0dip" 
+                android:scaleType="fitXY" 
+                android:layout_centerInParent="true" 
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="50dp"
+	        android:layout_marginRight="50dp"
+	        android:textSize="18sp" 
+	        android:textColor="@drawable/user_text_systle"
+	        android:background="@drawable/item_menu_item_selector"
+	        android:text="@string/item_menu_uninstall" />
+
+	    <Button
+	        android:id="@+id/button2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="50dp"
+	        android:layout_marginRight="50dp"
+	        android:layout_marginTop="15dp"
+	        android:textSize="18sp" 
+	        android:textColor="@drawable/user_text_systle"
+	        android:background="@drawable/item_menu_item_selector"
+	        android:text="@string/item_menu_type" />
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="50dp"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/item_menu_uninstall_selected"
+	        android:textColor="#ff000000" 
+	        android:textSize="14sp"/>
+
+    </LinearLayout>
+</RelativeLayout>
