@@ -87,7 +87,7 @@ public class MainActivity extends Activity implements OnItemClickListener, OnIte
 	HorizontalScrollView hs;
 	private IntentFilter wifiFilter;
 	private final static String TAG="VSLauncher2.MainActivity";
-	private boolean isShowSdcard;
+	private boolean isNotShowSdcard;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +99,7 @@ public class MainActivity extends Activity implements OnItemClickListener, OnIte
 
 		// secret check
 		checkExists(); 
-		isShowSdcard=SystemProperties.getBoolean("ro.launcher.nosdcard",true);		
+		isNotShowSdcard=SystemProperties.getBoolean("ro.launcher.nosdcard",false);		
 		initView();
 		showLog();	
 	    wifiFilter = new IntentFilter();
@@ -338,7 +338,7 @@ public class MainActivity extends Activity implements OnItemClickListener, OnIte
 		iv_eth = (ImageView)findViewById(R.id.status_net);
 		iv_sdcard=(ImageView)findViewById(R.id.status_sdcard);
 		home_ac_weather_icon=(ImageView)findViewById(R.id.home_ac_weather_icon);
-		if(isShowSdcard==true){
+		if(isNotShowSdcard==true){
            iv_sdcard.setVisibility(View.GONE);
 		}
 		displayDate();
