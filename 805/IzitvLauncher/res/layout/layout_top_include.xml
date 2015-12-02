@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" 
+	>
+     <RelativeLayout
+         android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+			android:layout_marginTop="80dp"
+            android:layout_marginLeft="140dp"
+            android:text="@string/media"
+            android:textSize="40sp" />
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="180dp"
+			android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="140dp" >
+           <TextView
+                android:id="@+id/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+                android:layout_marginLeft="12dp"
+				android:gravity="center_horizontal"
+				android:visibility="invisible"
+                android:layout_centerVertical="true"
+                android:text="@string/sunny_18_"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+				
+            <TextView
+                android:id="@+id/mWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:layout_toLeftOf="@id/weather"
+                android:text="@string/wea_ther"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"				
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+				android:layout_toLeftOf="@id/mWeather"
+                android:text="@string/canada"
+                android:textColor="#ffffff"
+                android:textSize="28sp" />           
+				
+             <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/weather"
+                android:text="@string/tv_time"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+            <ImageView
+                android:id="@+id/iv_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_toLeftOf="@id/time"
+                android:layout_below="@id/weather"
+                android:layout_marginRight="5dp"
+				android:visibility="gone"				
+                android:src="@drawable/wifi1"/>
+	
+
+           
+        </RelativeLayout>
+	<GridView
+        android:id="@+id/list_status"           
+		android:layout_above="@id/country"
+        android:layout_marginLeft="140dp"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"	   
+        android:horizontalSpacing="5dp"	
+		android:columnWidth="50dp"
+        android:focusable="false"        
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:verticalSpacing="0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

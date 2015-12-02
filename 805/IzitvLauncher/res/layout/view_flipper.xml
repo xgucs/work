@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_flipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:descendantFocusability="afterDescendants" >
+    
+    <com.amlogic.mediaboxlauncher.MyViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        android:id="@+id/fliper">
+         <include layout="@layout/layout_first_page"/>
+         <include layout="@layout/layout_second_page"/>
+         <include layout="@layout/layout_third_page"/>
+         <include layout="@layout/layout_fourth_page" />
+   </com.amlogic.mediaboxlauncher.MyViewFlipper>
+
+</RelativeLayout>

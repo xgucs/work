@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ccccff"
+	android:orientation="vertical" >
+
+	<LinearLayout 
+		android:layout_width="fill_parent"  
+		android:layout_height="100dp"   
+		android:background="@android:color/transparent"  
+		android:layout_marginTop="200dp"
+		android:layout_marginLeft="200dp"
+		android:layout_marginRight="200dp"	
+		android:orientation="horizontal"		
+		>
+        
+		<TextView  
+			android:layout_height="80dp"
+			android:layout_width="250dp"				
+			android:textSize="@dimen/str_size_large"
+			android:layout_margin="2dip"
+			android:gravity="center"
+			android:text="@string/str_mac_sn_check" 
+			android:textColor="@color/Black"
+			android:textStyle="bold"
+		/>
+
+		<TextView  
+			android:id="@+id/scan_textview" 
+			android:layout_weight="1"
+			android:layout_height="80dp" 
+			android:layout_width="wrap_content"			
+			android:layout_margin="2dip" 
+			android:textSize="@dimen/str_size_large"
+			android:text="@string/str_mac_reading"  
+			android:background="#a9a9a9"
+			android:gravity="center"
+			android:textColor="@color/Black"
+			android:textStyle="bold"
+			/> 
+
+	</LinearLayout>
+
+	<LinearLayout 
+		android:id="@+id/reset_linearlayout"
+		android:layout_width="fill_parent"  
+		android:layout_height="300dp"   
+		android:background="@android:color/transparent"  
+		android:layout_marginLeft="200dp"
+		android:layout_marginRight="200dp"	
+		android:orientation="vertical"		
+		>
+
+ 		<TextView  
+ 			android:id="@+id/data_textview"
+			android:layout_height="40dp"
+			android:layout_width="fill_parent"				
+			android:textSize="@dimen/str_size_small"
+			android:layout_margin="2dip"
+			android:gravity="center"
+			android:textColor="@color/Black"
+			android:textStyle="bold"
+		/>
+		
+		<Button  
+			android:id="@+id/reset_button"			
+			android:visibility="invisible"
+			android:layout_height="80dp" 
+			android:layout_width="fill_parent"			
+			android:layout_marginLeft="2dip"  
+			android:layout_marginRight="2dip"
+			android:layout_marginTop="100dip"			
+			android:textSize="@dimen/str_size_large"			
+			android:text="@string/str_factory_reset"  
+			android:gravity="center"
+			android:nextFocusLeft="@+id/reset_button"
+			android:nextFocusDown="@+id/reset_button"
+			android:nextFocusRight="@+id/reset_button"
+			android:nextFocusUp="@+id/reset_button" 
+			/> 
+
+	</LinearLayout>
+
+		
+</LinearLayout>

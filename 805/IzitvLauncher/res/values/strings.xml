@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Launcher</string>
+    <string name="wea_ther">Weather :</string>
+    <string name="media">Media</string>
+
+    <string name="canada">Canada </string>
+
+    <string name="sunny_18_">Sunny 18℃</string>
+
+    <string name="tv_time">16:50</string>
+    <string name="str_add">add</string>
+	<string name="all">myapps</string>
+
+</resources>

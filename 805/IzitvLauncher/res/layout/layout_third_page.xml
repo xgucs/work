@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/third"
+    android:background="@drawable/main_bg" >
+ 
+    <include layout="@layout/layout_top_include"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+    
+    
+    <RelativeLayout
+        android:id="@+id/re_center"
+        android:layout_width="1000dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="160dp" >
+        <GridLayout >
+            <GridView ></GridView>
+        </GridLayout>
+        
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

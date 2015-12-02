@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg">
+<RelativeLayout
+  android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+
+    <include
+        android:id="@+id/totle_top"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        layout="@layout/layout_top_include" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.amlogic.mediaboxlauncher.MyViewFlipper
+            android:id="@+id/newspp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/first"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/re_center"
+                    android:layout_width="1000dp"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="160dp" >
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_iztv"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_iztv"
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:layout_centerInParent="true"
+                            android:padding="1dp"
+                            android:src="@drawable/iz_tv" />
+                        
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+                    
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_iradio"
+                        android:layout_width="200dp"
+                        android:layout_height="400dp"
+                        android:layout_toRightOf="@id/re_iztv"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_iradio"
+                            android:layout_width="200dp"
+                            android:layout_height="400dp"
+                            android:layout_centerInParent="true"
+                            android:padding="1dp"
+                            android:src="@drawable/iradio" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_yutu"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_toRightOf="@id/re_iradio"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_yutu"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/yotue" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_airplay"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/re_yutu"
+                        android:layout_toRightOf="@id/re_iradio"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_airplay"
+                            android:layout_width="198dp"
+                            android:layout_height="198dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/airplay" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_ilure"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_toRightOf="@id/re_yutu"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_ilure"
+                            android:layout_width="198dp"
+                            android:layout_height="198dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/ilurer" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_google"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/re_ilure"
+                        android:layout_toRightOf="@id/re_airplay"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_google"
+                            android:layout_width="198dp"
+                            android:layout_height="198dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/google" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RelativeLayout
+                    android:layout_width="1000dp"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="160dp" >
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_bird"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/tv_bird"
+                            android:layout_width="398dp"
+                            android:layout_height="198dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/bird" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_human"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/re_bird"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/tv_human"
+                            android:layout_width="398dp"
+                            android:layout_height="198dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/human" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_fire"
+                        android:layout_width="200dp"
+                        android:layout_height="400dp"
+                        android:layout_toRightOf="@+id/re_human"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/tv_fire"
+                            android:layout_width="198dp"
+                            android:layout_height="398dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/fire" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_sock"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:layout_toRightOf="@+id/re_fire"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/tv_sock"
+                            android:layout_width="398dp"
+                            android:layout_height="198dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/sock" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/re_wire"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/re_sock"
+                        android:layout_toRightOf="@+id/re_fire"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/tv_wire"
+                            android:layout_width="398dp"
+                            android:layout_height="198dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/wire" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               >
+
+              <com.amlogic.mediaboxlauncher.MyScrollView
+                    android:layout_width="1000dp"
+                    android:layout_height="400dp"
+                     android:layout_marginLeft="140dp"
+                    android:layout_marginTop="160dp"
+                    android:descendantFocusability="afterDescendants" >
+
+                    <com.amlogic.mediaboxlauncher.MyGridLayout                     
+                        android:id="@+id/gv_shortcut_home"                        
+                        android:layout_width="1000dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:columnCount="5"
+                        android:descendantFocusability="afterDescendants"
+                        android:orientation="horizontal"
+                        android:rowCount="2" />
+                </com.amlogic.mediaboxlauncher.MyScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/forth"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RelativeLayout
+                    android:layout_width="1000dp"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="160dp" >
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/for_re_setting"
+                        android:layout_width="200dp"
+                        android:layout_height="400dp"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_setting"
+                            android:layout_width="198dp"
+                            android:layout_height="398dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/setting" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/for_re_explore"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:layout_toRightOf="@id/for_re_setting"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_explore"
+                            android:layout_width="398dp"
+                            android:layout_height="198dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/explorer" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/for_re_advance"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/for_re_explore"
+                        android:layout_toRightOf="@id/for_re_setting"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_advance"
+                            android:layout_width="398dp"
+                            android:layout_height="198dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/advanced_settings" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/for_re_clear"
+                        android:layout_width="200dp"
+                        android:layout_height="400dp"
+                        android:layout_toRightOf="@id/for_re_explore"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_clear"
+                            android:layout_width="198dp"
+                            android:layout_height="398dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/clearmaster" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+
+                    <com.amlogic.mediaboxlauncher.MyRelativeLayout
+                        android:id="@+id/for_re_netspeed"
+                        android:layout_width="200dp"
+                        android:layout_height="400dp"
+                        android:layout_toRightOf="@id/for_re_clear"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_netspeed"
+                            android:layout_width="198dp"
+                            android:layout_height="398dp"
+                            android:layout_alignParentRight="true"
+                            android:padding="1dp"
+                            android:src="@drawable/net_speed_test" />
+                    </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.amlogic.mediaboxlauncher.MyViewFlipper>
+		
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="560dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/house_black" />
+
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/point" />
+
+            <ImageView
+                android:id="@+id/imageview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/point" />
+
+            <ImageView
+                android:id="@+id/imageview4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/point" />
+        </LinearLayout>
+               <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="400dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="160dp"
+      >
+        <com.amlogic.mediaboxlauncher.MyRelativeLayout
+            android:id="@+id/re_sow_left"
+			android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            >
+
+            <ImageView
+                android:id="@+id/sor_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/srow_left" />
+        </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+      </RelativeLayout>
+          <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="400dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="160dp"
+      >
+
+        <com.amlogic.mediaboxlauncher.MyRelativeLayout
+            android:id="@+id/re_sow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+         
+      >
+
+            <ImageView
+                android:id="@+id/sor_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/srow_right" />
+        </com.amlogic.mediaboxlauncher.MyRelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>
+ <ImageView
+		android:id="@+id/img_trans_frame"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:scaleType="fitCenter" 
+		android:background="@drawable/frame"
+		android:layout_centerInParent="true"
+		android:visibility="invisible"
+	/>
+	
+	<include layout="@layout/layout_focus_unit" />
+
+	<ImageView
+		android:id="@+id/img_frame"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:scaleType="fitCenter" 
+		android:background="@drawable/frame"
+		android:layout_centerInParent="true"
+	/>
+</AbsoluteLayout>

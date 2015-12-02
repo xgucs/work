@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/first"
+    android:background="@drawable/main_bg" >
+ 
+    <include layout="@layout/layout_top_include"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+    
+    
+    <RelativeLayout
+        android:id="@+id/re_center"
+        android:layout_width="1000dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="160dp" >
+
+        <RelativeLayout
+            android:id="@+id/re_iztv"
+            android:layout_width="400dp"
+            android:layout_height="400dp" >
+
+            <ImageView
+                android:id="@+id/iv_iztv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/iz_tv" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_iradio"
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:layout_toRightOf="@id/re_iztv" >
+
+            <ImageView
+                android:id="@+id/iv_iradio"
+                android:layout_width="200dp"
+                android:layout_height="400dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/iradio" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_yutu"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_toRightOf="@id/re_iradio" >
+
+            <ImageView
+                android:id="@+id/iv_yutu"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/yotue" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_airplay"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/re_yutu"
+            android:layout_toRightOf="@id/re_iradio" >
+
+            <ImageView
+                android:id="@+id/iv_airplay"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/airplay" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_ilure"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_toRightOf="@id/re_yutu" >
+
+            <ImageView
+                android:id="@+id/iv_ilure"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ilurer" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_google"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/re_ilure"
+            android:layout_toRightOf="@id/re_airplay" >
+
+            <ImageView
+                android:id="@+id/iv_google"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/google" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    
+
+    
+
+</RelativeLayout>

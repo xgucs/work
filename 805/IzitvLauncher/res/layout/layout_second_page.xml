@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/second"
+    android:background="@drawable/main_bg" >
+   <include layout="@layout/layout_top_include"
+       android:layout_width="match_parent"
+       android:layout_height="160dp"
+       />
+    <RelativeLayout
+        android:id="@+id/re_center"
+        android:layout_width="1000dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="160dp" >
+
+        <RelativeLayout
+            android:id="@+id/re_bird"
+            android:layout_width="400dp"
+            android:layout_height="200dp" >
+
+            <ImageView
+                android:id="@+id/tv_bird"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/bird" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_human"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/re_bird" >
+
+            <ImageView
+                android:id="@+id/tv_human"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/human" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_fire"
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:layout_toRightOf="@+id/re_human" >
+
+            <ImageView
+                android:id="@+id/tv_fire"
+                android:layout_width="200dp"
+                android:layout_height="400dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/fire" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_sock"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_toRightOf="@+id/re_fire" >
+
+            <ImageView
+                android:id="@+id/tv_sock"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sock" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_wire"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/re_sock"
+            android:layout_toRightOf="@+id/re_fire" >
+
+            <ImageView
+                android:id="@+id/tv_wire"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/wire" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+  
+
+</RelativeLayout>

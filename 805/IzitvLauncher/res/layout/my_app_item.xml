@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<com.amlogic.mediaboxlauncher.MyRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="140dp" 
+    android:layout_height="140dp"
+    android:layout_centerHorizontal="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+	android:descendantFocusability="beforeDescendants"
+    > 
+     <ImageView 
+    		android:id="@+id/item_bg"  
+    	    android:layout_height="80dp" 
+    	    android:layout_width="80dp"
+    	    android:layout_margin="40dp"    	    
+    	    android:layout_centerInParent="true"
+    	   >  
+    	</ImageView>   
+        
+  
+   
+</com.amlogic.mediaboxlauncher.MyRelativeLayout> 

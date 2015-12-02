@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FactoryTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- title string -->
+    <string name = "str_sdcard">TF卡：</string>
+    <string name = "str_usb">USB：</string>
+    <string name = "str_wifi">无线网络：</string>
+    <string name="str_lan">有线网络：</string>
+    <string name="str_video_audio">音视频：</string>
+    <string name = "str_ir">遥控器：</string>
+    <string name = "str_notice">若为有线网络请用DHCP路由器</string>
+    <string name = "str_multicast_addr">当前范围无线数量：</string>
+    <string name = "str_multicast_port">信号质量：</string>
+    <string name = "str_ssid">SSID：</string>
+    <string name = "str_stronge_size">内部存储空间大小：</string>
+    <string name = "str_inter_left_size">内存剩余空间大小：</string>
+	<string name = "str_extro_size">内部可用空间大小：</string>
+	<string name = "str_extro_left_size">外存剩余空间大小：</string>
+    <string name = "str_soft_version">软件版本：</string>
+    <string name = "str_hard_version">系统版本：</string>
+    <string name = "str_product_type">产品型号：</string>
+    <string name = "str_release_data">发布时间：</string>
+    <string name = "str_lan_mac">有线Mac：</string>
+    <string name = "str_ip">有线IP地址：</string>
+    <string name = "str_led">指示灯：</string>
+    <string name = "str_mac_note">Note：请检查扫描枪USB接口是否已经连接</string>
+    
+    <string name = "str_settings">设置</string>
+    <string name = "str_re_testing">重新检测</string>
+    <string name = "str_burn_in_test">老化测试</string>
+    <string name = "str_break">退出</string>
+    
+    <string name = "str_write">已扫描Mac地址：</string>
+    <string name = "str_read">状态：</string>
+    
+    <!-- states string -->
+    <string name = "str_mac_reading">等待扫描枪扫描...</string>
+    <string name = "str_mac_brun_reading">等待烧入Mac...</string>
+    <string name = "str_waiting">正在检测...</string>
+    <string name = "str_reading">正在获取...</string>
+    <string name = "str_wifi_notice">请排查Wifi问题</string>
+    <string name = "str_lan_notice">请排查Lan问题</string>
+    <string name = "str_normal">检测正常</string>
+    <string name = "str_unnormal">检测异常</string>
+    <string name = "str_led_press">按下测试</string>
+    <string name = "str_wifi_process">检测进度：</string>
+    
+    <string name = "str_normal_usb1">USB正常</string>
+    <string name = "str_normal_usb2">USB2正常</string>
+    <string name = "str_normal_usb3">USB3正常</string>
+    <string name = "str_unnormal_usb1">USB异常</string>
+    <string name = "str_unnormal_usb2">USB2异常</string>
+    <string name = "str_unnormal_usb3">USB3异常</string>
+    
+   <string name = "str_all">共</string> 
+   <string name = "str_remain">剩余</string>
+    
+    
+  <string name = "str_wifi_normal">检测正常,信号强度：</string>
+
+    <string name = "str_red">红</string>
+    <string name = "str_blue">蓝</string>
+    <string name = "str_factory">静音检测</string>
+    <string name = "str_factory_press">按下检测</string>
+    <string name = "str_mac_press">MAC地址烧录</string>
+    <string name = "str_insert">请插入扫描枪扫描</string>
+    <string name = "str_mac_addr">MAC地址:</string>
+     <string name = "str_mac_wating">等待扫描</string>
+      <string name = "str_mac_fault">MAC地址烧录失败,请再次扫描</string>
+    <string name = "str_mac_ok">MAC地址烧录成功</string>
+    <string name = "str_mute">静音</string>
+        <string name = "str_unmute">声音已开启</string>
+
+        <string name = "str_video">进入视频老化程序</string>
+         <string name = "str_retest">重新检测</string>
+
+    <string name = "str_model">写入型号</string>
+    <string name = "str_model_value">"DM1007"</string>
+    <string name = "str_hw_verion">写入硬件版本号</string>
+    <string name = "str_hw_version_value">"14230711"</string> 
+
+    <string name = "str_sn_write">已扫描SN地址：</string>
+    <string name = "str_hw_write">已扫描硬件版本号：</string>
+    
+    <string name = "str_factory_reset">恢复工厂设置</string>
+
+    <string name = "str_current_model">当前型号：</string>
+    <string name = "str_current_hw">当前硬件版本号：</string>
+    <string name = "str_current_builddate">编译时间：</string>   
+    <string name = "str_current_sn">当前SN号：</string>
+    <string name = "str_current_mac">当前MAC号：</string>
+
+    <string name = "str_model_write_success">写入型号成功</string>
+    <string name = "str_model_write_failed">写入型号失败</string>
+    <string name = "str_hw_write_success">写入硬件版本号成功</string>
+    <string name = "str_hw_write_failed">写入硬件版本号失败</string>
+    <string name = "str_sn_write_success">写入SN成功</string>
+    <string name = "str_sn_write_failed">写入SN失败</string>
+    <string name = "str_mac_write_success">写入MAC成功</string>
+    <string name = "str_mac_write_failed">写入MAC失败</string>        
+    
+    <string name = "str_model_null">未写入型号，或读取型号失败</string>
+    <string name = "str_hw_null">未写入硬件版本号，或读取硬件版本号失败</string>
+    <string name = "str_sn_null">未写入SN号，或读取SN号失败</string>
+    <string name = "str_mac_null">未写入MAC号，或读取MAC号失败</string>       
+    
+    <string name = "str_server_connection_failed">Socket连接服务器失败！请检查网络是否打开！</string>        
+    <string name = "str_io_exception_failed">Socket创建失败，或IO连接异常！ 请检查网络是否打开！</string>        
+    <string name = "str_server_permission_denies">Socket连接服务器失败！权限不允许！</string>        
+    <string name = "str_sn_error">错误的SN号！</string>        
+    <string name = "str_mac_error">错误的MAC地址！</string>        
+    <string name = "str_mac_notmatch">MAC地址不一样,再次扫描即可更新</string>
+    <string name = "str_mac_match">输入的MAC地址与当前地址一样</string>
+    <string name = "str_control_char_error">错误的控制字！</string>       
+    <string name = "str_hw_error">错误的硬件版本号！</string>        
+
+    <string name = "str_lan_error">LAN网络测试失败，请重新检查！</string>        
+    <string name = "str_wifi_error">WIFI网络测试失败，请重新检查！</string>        
+    <string name = "str_led_error">请测试LED灯！</string>        
+
+    <string name = "str_ok_play">请确认音视频是否播放，按OK键测试下一项</string>        
+    <string name = "str_ir_led">遥控灯</string> 
+    <string name = "str_network_led">网络灯</string> 
+    <string name = "str_ok_ir_led">请确认遥控灯，按OK键测试下一项</string>
+    <string name = "str_ok_network_led">请确认网络灯，按OK键测试下一项</string>
+    <string name = "str_green_led">绿灯</string> 
+    <string name = "str_blue_led">蓝灯</string>   
+    <string name = "str_ok_green_led">请确认是否为绿灯亮，按OK键测试下一项</string>
+    <string name = "str_ok_blue_led">请确认是否为蓝灯亮，按OK键测试下一项</string>
+    <string name = "str_red_led">红灯</string> 
+    <string name = "str_ok_red_led">请确认是否为红灯亮，按OK键测试下一项</string>                    
+    <string name = "str_wifi_signal_week">正在检测中，信号强度不够</string>               
+        
+    <string name="str_version_error_toast">请检查U盘根目录factory_host.ini中版本号是否和系统版本匹配</string> 
+    <string name="str_memory_error_toast">请检查U盘根目录factory_host.ini中存储大小是否和系统版本匹配</string>               
+    <string name="str_wifi_host_error">请检查U盘根目录factory_host.ini中WIFI配置项</string>             
+    <string name="str_lan_package_loss">有线网络包丢失</string>                    
+
+    <string name="str_mac_sn_check">SN或MAC检验</string>    
+    <string name="str_auto_test_process">自动化测试中...</string>         
+    <string name="str_sn_check_process">SN或MAC检验中...</string>       
+    <string name="str_mac_sn_not_write">SN或MAC未烧写</string>  
+    
+    <string name="bt_video">视频测试</string>   
+    <string name="bt_audio">音频测试</string>   
+    <string name="tx_wifi_mac">无线MAC地址:</string> 
+      <string name="str_test_burn">老化测试</string> 
+    <string name="str_wifi_set">WI-FI设置</string> 
+    <string name="tx_wifi_ip">无线IP地址：</string>  
+    <string name="tx_bt_next">工厂测试</string>   
+    <string name = "str_tf">TF卡：</string>  
+    <string name = "str_blue_tooth">蓝牙测试</string>
+    <string name = "str_scan_mac">MAC扫描</string>  
+     <string name="tx_check_port">USB,TF卡端口检测(插入设备，正常将会显示图标)</string>
+</resources>

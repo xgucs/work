@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center"
+    android:background="#ccccff">
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_auto_test_process"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/str_size_super_large" 
+        android:textColor="@color/Black"
+        android:visibility="gone"/>
+    <VideoView
+        android:id="@+id/auto_test_vidoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
