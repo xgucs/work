@@ -338,14 +338,13 @@ public class MainActivity extends Activity implements OnItemClickListener, OnIte
 		iv_eth = (ImageView)findViewById(R.id.status_net);
 		iv_sdcard=(ImageView)findViewById(R.id.status_sdcard);
 		home_ac_weather_icon=(ImageView)findViewById(R.id.home_ac_weather_icon);
+		if(isShowSdcard==true){
+           iv_sdcard.setVisibility(View.GONE);
+		}
 		displayDate();
 		dispalyEth();
-		displayWifi();
-		if(isShowSdcard==false){
-			iv_sdcard.setVisibility(View.VISIBLE);
-			displaySdcard();
-		}
-		
+		displayWifi();		
+		displaySdcard();	
 		displayUsb();
 	
 		
@@ -764,18 +763,16 @@ public class MainActivity extends Activity implements OnItemClickListener, OnIte
 
 			if (Intent.ACTION_MEDIA_EJECT.equals(action)
 					|| Intent.ACTION_MEDIA_UNMOUNTED.equals(action)){
-				if(isShowSdcard==false){
-				   iv_sdcard.setVisibility(View.VISIBLE);
+				
                    displaySdcard();
-				}				
+							
 			    displayUsb();
 			}
 			else if( Intent.ACTION_MEDIA_MOUNTED.equals(action)) 
 			{
-				if(isShowSdcard==false){
-					iv_sdcard.setVisibility(View.VISIBLE);
+				
 					displaySdcard();
-				}				
+							
 				displayUsb();
 			}
 		}

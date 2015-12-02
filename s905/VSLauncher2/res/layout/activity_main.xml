@@ -145,8 +145,7 @@
                 android:id="@+id/status_sdcard"
                 android:layout_width="29.0dip"
                 android:layout_height="28.0dip"
-                android:layout_marginLeft="7.0dip"
-                android:visibility="invisible"
+                android:layout_marginLeft="7.0dip"                
                 android:scaleType="fitXY" />
         </LinearLayout>
 
